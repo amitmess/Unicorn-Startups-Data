@@ -59,3 +59,6 @@ st.pyplot(fig2)
 
 # Fun Fact or Insight
 st.success(f"There are {len(filtered_df)} unicorns in the {selected_industry} industry.")
+
+pip install streamlit
+streamlit run app.py
