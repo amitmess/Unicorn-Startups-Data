@@ -11,7 +11,7 @@ df['Valuation ($B)'] = pd.to_numeric(df['Valuation ($B)'], errors='coerce')
 df['Date Joined'] = pd.to_datetime(df['Date Joined'], errors='coerce')
 df['Year Joined'] = df['Date Joined'].dt.year
 
-st.title("🦄 Unicorn Startups Analysis")
+st.title(" Unicorn Startups Analysis")
 
 # 1. Histogram
 st.subheader("1. Distribution of Unicorn Valuations")
