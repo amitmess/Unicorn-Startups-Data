@@ -67,7 +67,7 @@ with tab1:
     st.subheader("💰 Valuation Distribution (All Industries)")
 
     fig, ax = plt.subplots(figsize=(10, 6))
-    sns.histplot(df[df['Valuation ($B)'] < 20]['Valuation ($B)'], bins=30, kde=True, color='skyblue')
+    sns.histplot(df[df['Valuation ($B)'] < 10]['Valuation ($B)'], bins=30, kde=True, color='skyblue')
     mean_val = df['Valuation ($B)'].mean()
     median_val = df['Valuation ($B)'].median()
     plt.axvline(mean_val, color='red', linestyle='--', label=f'Mean ≈ {mean_val:.1f}B')
