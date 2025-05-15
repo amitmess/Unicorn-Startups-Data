@@ -62,7 +62,9 @@ with tab0:
     - Dan Madpis
     - Amit Messil
 
-    **Colab Notebook:** [ITDS Midterm Project- Dan and Amit.ipynb - Colab](https://colab.research.google.com/drive/1VZhZDOYTekHl10dhn7X6BosDs7V8xFQd?usp=sharing#scrollTo=b0nqsKVIUYQa)  
+    **Colab Notebook:** [ITDS Midterm Project- Dan and Amit.ipynb - Colab](https://colab.research.google.com/drive/1VZhZDOYTekHl10dhn7X6BosDs7V8xFQd?usp=sharing#scrollTo=b0nqsKVIUYQa) 
+
+    
     **Dataset:** [Unicorn Startups on Kaggle](https://www.kaggle.com/datasets/ramjasmaurya/unicorn-startups)
 
 
