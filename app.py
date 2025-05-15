@@ -107,6 +107,65 @@ with tab2:
     - The red dashed line marks the **median** value
     """)
 
+
+    # New graph
+     st.subheader("📦 Valuation Distribution by Industry (Top 10)")
+
+    # Step 1: Filter top 10 most frequent industries
+    top_industries = df['Industry'].value_counts().head(10).index
+    filtered_df = df[df['Industry'].isin(top_industries)]
+
+    # Step 2: Sort industries by median valuation
+    median_order = (
+        filtered_df.groupby('Industry')['Valuation ($B)']
+        .median()
+        .sort_values(ascending=False)
+        .index
+    )
+
+    # Step 3: Create the boxplot
+    fig, ax = plt.subplots(figsize=(14, 7))
+    sns.boxplot(
+        x='Industry',
+        y='Valuation ($B)',
+        data=filtered_df,
+        order=median_order,
+        hue='Industry',        # Added hue to match palette
+        palette='Set2',
+        showfliers=False,
+        width=0.6,
+        dodge=False            # Prevent duplicate boxes from hue
+    )
+
+    # Step 4: Add title and labels
+    plt.title('How Much Are Unicorn Startups Worth?\n(Top 10 Industries)', fontsize=18, fontweight='bold')
+    plt.xlabel('Industry', fontsize=14)
+    plt.ylabel('Valuation in Billions of Dollars ($B)', fontsize=14)
+
+    # Step 5: Rotate x-axis labels
+    plt.xticks(rotation=30, ha='right', fontsize=12)
+    plt.yticks(fontsize=12)
+
+    # Step 6: Add grid lines
+    plt.grid(axis='y', linestyle='--', alpha=0.7)
+
+    # Step 7: Annotate median values
+    medians = filtered_df.groupby('Industry')['Valuation ($B)'].median().reindex(median_order)
+    for i, median_val in enumerate(medians):
+        plt.text(i, median_val + 1, f'{median_val:.1f}B', ha='center', fontsize=10, color='black', fontweight='bold')
+
+    # Step 8: Final layout and render
+    plt.tight_layout()
+    plt.legend([],[], frameon=False)  # Hide legend
+    st.pyplot(fig)
+
+    # Text Insight
+    st.markdown(f"""
+    - This chart shows valuation spread by **top 10 industries**.
+    - FinTech and AI show the widest ranges and highest outliers.
+    - The red annotations show **median valuations**, highlighting typical company values.
+    """)
+
 # ─────────────────────────────────────
 # TAB 3: Unicorn Growth and Country Stats
 # ─────────────────────────────────────
