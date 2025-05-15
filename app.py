@@ -47,7 +47,31 @@ else:
 # ─────────────────────────────────────
 # Tabs for Navigation
 # ─────────────────────────────────────
-tab1, tab2, tab3 = st.tabs(["🏠 Overview", "📦 Industry Analysis", "📈 Unicorn Growth"])
+tab0, tab1, tab2, tab3 = st.tabs(["👥 Team Info", "🏠 Overview", "📦 Industry Analysis", "📈 Unicorn Growth"])
+
+# ─────────────────────────────────────
+# TAB 0: Team Info
+# ─────────────────────────────────────
+with tab0:
+    st.title("👥 Team Info")
+
+    st.markdown("""
+    **📁 Midterm Project – Introduction to Data Science**
+
+    **👨‍💻 Team Members:**
+    - Dan Madpis
+    - Amit Messil
+    
+    ** Colab Notebook:** (https://colab.research.google.com/drive/1VZhZDOYTekHl10dhn7X6BosDs7V8xFQd?usp=sharing#scrollTo=b0nqsKVIUYQa)
+    **📊 Dataset Used:** [Unicorn Startups on Kaggle](https://www.kaggle.com/datasets/ramjasmaurya/unicorn-startups)
+
+    **🎓 Course:** Introduction to Data Science  
+    **📅 Semester:** Spring 2025  
+    **🏫 Institution:** Reichman University
+
+    ---
+    """)
+
 
 # ─────────────────────────────────────
 # TAB 1: Overview
