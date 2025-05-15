@@ -1,3 +1,5 @@
+# This is a backup version of the original Streamlit app before tabs were added.
+
 import streamlit as st
 import pandas as pd
 import seaborn as sns
