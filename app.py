@@ -12,6 +12,24 @@ df['Date Joined'] = pd.to_datetime(df['Date Joined'], errors='coerce')
 df['Year Joined'] = df['Date Joined'].dt.year
 
 st.title(" Unicorn Startups Analysis")
+# ────────────────────────────────────────
+# INTRODUCTION SECTION
+# ────────────────────────────────────────
+
+st.markdown("""
+## 📊 Welcome to the Unicorn Startup Insights Dashboard
+
+This app analyzes data on unicorn startups — privately held companies valued at over **$1 billion**.  
+Using this dashboard, you can explore how unicorns are distributed by industry, track growth over time, and see where the most valuable companies are located.
+
+**Here’s what we explore:**
+- 💼 Valuation distribution by industry
+- 📈 Growth in unicorns over the years
+- 🌍 Top countries dominating the unicorn landscape
+
+Use the sidebar to filter by **industry**, and scroll below to see charts and insights!
+""")
+
 
 # 1. Histogram
 st.subheader("1. Distribution of Unicorn Valuations")
