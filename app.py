@@ -82,34 +82,8 @@ with tab1:
 # TAB 2: Industry Analysis
 # ─────────────────────────────────────
 with tab2:
-    st.subheader(f"📦 Valuation Distribution in {selected_industry}")
-
-    fig2, ax2 = plt.subplots(figsize=(10, 6))
-    sns.boxplot(
-        data=filtered_df,
-        x='Industry',
-        y='Valuation ($B)',
-        hue='Industry',
-        palette='Set2',
-        showfliers=False,
-        width=0.5,
-        dodge=False
-    )
-    median_val = filtered_df['Valuation ($B)'].median()
-    plt.axhline(median_val, color='red', linestyle='--', label=f'Median ≈ {median_val:.1f}B')
-    plt.legend([], [], frameon=False)
-    plt.xticks(rotation=30, ha='right')
-    plt.grid(axis='y', linestyle='--', alpha=0.6)
-    st.pyplot(fig2)
-
-    st.markdown(f"""
-    - This boxplot shows valuation spread for startups in **{selected_industry}**
-    - The red dashed line marks the **median** value
-    """)
-
-
     # New graph
-     st.subheader("📦 Valuation Distribution by Industry (Top 10)")
+    st.subheader("📦 Valuation Distribution by Industry (Top 10)")
 
     # Step 1: Filter top 10 most frequent industries
     top_industries = df['Industry'].value_counts().head(10).index
