@@ -61,9 +61,10 @@ with tab0:
     **👨‍💻 Team Members:**
     - Dan Madpis
     - Amit Messil
-    
-    **Colab Notebook:** [ITDS Midterm Project- Dan and Amit.ipynb - Colab](https://colab.research.google.com/drive/1VZhZDOYTekHl10dhn7X6BosDs7V8xFQd?usp=sharing#scrollTo=b0nqsKVIUYQa)
-    **📊 Dataset Used:** [Unicorn Startups on Kaggle](https://www.kaggle.com/datasets/ramjasmaurya/unicorn-startups)
+
+    **Colab Notebook:** [ITDS Midterm Project- Dan and Amit.ipynb - Colab](https://colab.research.google.com/drive/1VZhZDOYTekHl10dhn7X6BosDs7V8xFQd?usp=sharing#scrollTo=b0nqsKVIUYQa)  
+    **Dataset:** [Unicorn Startups on Kaggle](https://www.kaggle.com/datasets/ramjasmaurya/unicorn-startups)
+
 
     **🎓 Course:** Introduction to Data Science  
     **📅 Semester:** Spring 2025  
