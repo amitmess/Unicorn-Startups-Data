@@ -53,14 +53,14 @@ tab1, tab2, tab3 = st.tabs(["🏠 Overview", "📦 Industry Analysis", "📈 Uni
 # TAB 1: Overview
 # ─────────────────────────────────────
 with tab1:
-    st.title("🦄 Unicorn Startup Insights Dashboard")
+    st.title("🦄 Unicorn Startup Analysis Dashboard")
     st.markdown("""
     Explore data on billion-dollar startups across the globe.
 
     **What you'll see here:**
-    - 💼 Valuation distribution by industry
-    - 📈 Unicorn growth by year
-    - 🌍 Countries with the most unicorns
+    - Valuation distribution by industry
+    - Unicorn growth by year
+    - Countries with the most unicorns
     """)
 
     # Graph 1 – Distribution Overview (all industries)
@@ -212,14 +212,14 @@ with tab3:
 
     st.markdown("---")
     st.markdown("""
-    ## ✅ Final Conclusion
+    ## Final Conclusion
 
     - Most unicorns are valued under $10B, but tech giants skew the averages.
     - Fintech, AI, and SaaS have some of the highest-valued companies.
     - The unicorn boom peaked in 2021 with VC funding at its height.
     - The US continues to lead, but other nations are closing the gap.
 
-    This dashboard gives you a snapshot of the startup world — where innovation becomes billion-dollar businesses 🚀.
+    This dashboard gives you a snapshot of the startup world — where innovation becomes billion-dollar businesses.
     """)
 
 # Done!
