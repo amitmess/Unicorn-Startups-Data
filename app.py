@@ -53,7 +53,7 @@ tab0, tab1, tab2, tab3 = st.tabs(["👥 Team Info", "🏠 Overview", "📦 Indus
 # TAB 0: Team Info
 # ─────────────────────────────────────
 with tab0:
-    st.title("👥 Team Info")
+    st.title("Team Info")
 
     st.markdown("""
     **📁 Midterm Project – Introduction to Data Science**
@@ -62,7 +62,7 @@ with tab0:
     - Dan Madpis
     - Amit Messil
     
-    ** Colab Notebook:** (https://colab.research.google.com/drive/1VZhZDOYTekHl10dhn7X6BosDs7V8xFQd?usp=sharing#scrollTo=b0nqsKVIUYQa)
+    ** Colab Notebook:** [ITDS Midterm Project- Dan and Amit.ipynb - Colab](https://colab.research.google.com/drive/1VZhZDOYTekHl10dhn7X6BosDs7V8xFQd?usp=sharing#scrollTo=b0nqsKVIUYQa)
     **📊 Dataset Used:** [Unicorn Startups on Kaggle](https://www.kaggle.com/datasets/ramjasmaurya/unicorn-startups)
 
     **🎓 Course:** Introduction to Data Science  
