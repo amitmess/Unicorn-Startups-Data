@@ -53,7 +53,7 @@ tab1, tab2, tab3 = st.tabs(["🏠 Overview", "📦 Industry Analysis", "📈 Uni
 # TAB 1: Overview
 # ─────────────────────────────────────
 with tab1:
-    st.title("🦄 Unicorn Startup Analysis Dashboard")
+    st.title("🦄 Unicorn Startups Analysis Dashboard")
     st.markdown("""
     Explore data on billion-dollar startups across the globe.
 
