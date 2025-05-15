@@ -36,8 +36,13 @@ df = load_data()
 # Sidebar: Filter by Industry
 # ─────────────────────────────────────
 top_industries = df['Industry'].value_counts().head(10).index.tolist()
-selected_industry = st.sidebar.selectbox("Choose an Industry", top_industries)
-filtered_df = df[df['Industry'] == selected_industry]
+industry_options = ["All"] + top_industries
+selected_industry = st.sidebar.selectbox("Choose an Industry", industry_options)
+
+if selected_industry == "All":
+    filtered_df = df[df['Industry'].isin(top_industries)]
+else:
+    filtered_df = df[df['Industry'] == selected_industry]
 
 # ─────────────────────────────────────
 # Tabs for Navigation
